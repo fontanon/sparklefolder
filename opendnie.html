@@ -1,47 +1,30 @@
 <strong>OpenDNIe: un driver libre para una ciudadan&iacute;a libre</strong>
 <br>
 <p>El DNIe (carn&eacute; de identidad electr&oacute;nico de Espa&ntilde;a), surge como respuesta del Ministerio del Interior a las necesidades de <a href="http://www.dnielectronico.es/informacion_general.html">identificaci&oacute;n de la ciudadan&iacute;a en la nueva sociedad de la informaci&oacute;n</a>. Se comenz&oacute; a expedir en 2006 y actualmente 15 millones de espa&ntilde;oles cuentan con &eacute;l, aunque se estima que, a d&iacute;a de hoy, <a href="http://www.internautas.org/html/6078.html">pocos ciudadanos</a> lo utilizan asiduamente para realizar operaciones a trav&eacute;s de internet. <a href="http://opendnie.cenatic.es/">OpenDNIe</a>, la implementaci&oacute;n libre del driver del DNIe, ha sido <a href="http://www.kriptopolis.org/opendnie-listo">presentado en sociedad</a>, a trav&eacute;s del conocido portal tecnol&oacute;gico Kript&oacute;polis, por su principal&iacute;simo desarrollador: jonsito.</p>
-<br>
 <p>Si bien OpenDNIe supone un hito importante para el soporte transparente del DNIe en GNU/Linux (puede que incluso llegue a serlo <a href="http://kounch-mac.blogspot.com/2011/02/compilacion-de-opendnie-para-mac-os-x.html">para MacOS</a>), no es menos cierto el hito que tambi&eacute;n supone en un culebr&oacute;n de m&aacute;s de 4 a&ntilde;os que podr&iacute;amos titular "El soporte al DNIe ¿se debe transferir el control a la ciudadan&iacute;a?".</p>
-<br>
 <p>La historia del soporte al DNIe, sobre todo para plataformas GNU/Linux, est&aacute; transform&aacute;ndose sucesivamente de una pugna entre el Estado y la ciudadan&iacute;a a una colaboraci&oacute;n aperturista, pero:</p>
 <p>¿Tienen derecho las comunidades del software libre a exigir que se les transfiera el control del soporte?</p>
 <p>¿Qu&eacute; les mueve a estar tan interesados?</p>
-<br>
 <strong>DNIe y el soporte ofrecido por la DGPGC</strong>
 <br>
 <p>Hist&oacute;ricamente, en Espa&ntilde;a, el documento nacional de identidad ha sido expedido por la Polic&iacute;a, y por ende, el DNIe acab&oacute; recayendo como competencia de la Direcci&oacute;n General de Polic&iacute;a y la Guardia Civil (DGPGC, en adelante). Para poder realizar operaciones telem&aacute;ticas con el DNIe es necesario el propio carn&eacute;, un lector y los controladores, o drivers, para el sistema operativo que uno emplee. Los servicios de inform&aacute;tica de la DGPGC han sido los encargados de <a href="http://www.dnielectronico.es/descargas/index.html">suministrar drivers</a>, manteniendo ellos siempre el control &iacute;ntegro del desarrollo.</p>
-<br>
 <p>Esta es la raz&oacute;n fundamental de los disgustos surgidos en ciertas comunidades del software libre, que siempre abogaron porque la DGPGC hiciese p&uacute;blico los c&oacute;digos de los drivers del DNIe a fin de que la propia comunidad pudiera mantenerlos actualizados e integrados de serie en los distintos sabores de GNU/Linux.</p>
-<br>
 <strong>... y lleg&oacute; la liberaci&oacute;n</strong
-<br>
 <p>Hace unos meses la DGPGC decici&oacute; que no dar&iacute;a m&aacute;s soporte a los drivers del DNIe para GNU/Linux y que <a href="http://www.kriptopolis.org/disponibles-fuentes-pkcs11">los liberaba</a> con intenci&oacute;n de que sirviera como "implementaci&oacute;n de referencia", esto es, con fines educativos para que la ciudadan&iacute;a desarrollara una implementaci&oacute;n libre desde cero.</p>
-<br>
 <p>Juan Antonio Mart&iacute;nez, alias jonsito, asumi&oacute; el reto de realizar esta implementaci&oacute;n. En Kript&oacute;polis hubo cierto revuelo a que esta gran obra deber&iacute;a ser apoyada por alg&uacute;n ente p&uacute;blico: al fin y al cabo la ciudadan&iacute;a se iba a hacer cargo del desarrollo y mantenimiento de unos controladores para un instrumento de identificaci&oacute;n propiedad del Estado. CENATIC, una fundaci&oacute;n promovida por el Ministerio de Industria, <a href="http://www.kriptopolis.org/opensc-cenatic?page=4">se prest&oacute; al trato aportando</a> no solo la <a href="https://forja.cenatic.es/projects/opendnie/">forja de proyectos</a>, sino personal interno dedicado a que el proyecto sea un &eacute;xito.<p>
-<br>
 <p>Jonsito como principal desarrollador, gente del proyecto OpenSC (open smart card) como gu&iacute;as para que OpenDNIe acabe integrado dentro de OpenSC, la fundaci&oacute;n CENATIC facilitando infraestructura y promoci&oacute;n, y algunas personas m&aacute;s (empaquetadores, testers, etc.) hab&iacute;an conseguido crear una comunidad alrededor de OpenDNIe.</p>
-<br>
 <strong>Desmitificando las comunidades del software libre</strong>
 <br>
 <p>Pesa todav&iacute;a en nuestros d&iacute;as una falsa visi&oacute;n de las comunidades del software libre, como colectivos activistas integrados por hackers. Casi como unas logias mas&oacute;nicas que quieren agotar el modelo comercial de producci&oacute;n del software. Hay qui&eacute;n incluso piensa en el software libre y las comunidades como movimientos anti-capitalistas. Nada m&aacute;s lejos de la realidad.</p>
-<br>
 <p>Por supuesto que los integrantes en estas comunidades opinan que el acceso al conocimiento de manera libre genera mayores oportunidades para todos. Pero lo realmente importante que cabe destacar es que este bien com&uacute;n: el acceso al c&oacute;digo fuente de un programa y por ende al conocimiento, surge como consecuencia de la b&uacute;squeda de un beneficio individual por parte de la persona que libera dicho conocimiento. No se libera c&oacute;digo como fin en s&iacute; mismo, sino como medio para la obtenci&oacute;n de un beneficio.</p>
-<br>
 <p>Esto puede entenderse si tomamos, como caso base, un programador que libera el c&oacute;digo fuente de un programa. Puede hacerlo motivado por ganar promoci&oacute;n personal, dado que su programa llega a un p&uacute;blico mucho mayor que si fuera de c&oacute;digo cerrado; o bien espera que otros programadores hagan peer-review y le detecten/solucionen bugs. Estos otros programadores pueden estar motivados por cuestiones acad&eacute;micas, por ganar en conocimiento, auto-realizaci&oacute;n, o porque crean que solucionando bugs del trabajo del otro puedan llegar a darle una calidad tal, que quiz&aacute;s acaben incluso us&aacute;ndolo para obtener beneficio econ&oacute;mico. Este caso base, por razonamiento inductivo, lleva a entender como se construyen las comunidades del software libre: como suma de individuos, de forma espont&aacute;nea y no dirigida.</p>
-<br>
 <p>Desde el punto de vista comercial, con la referencia a cifras de 2010 de dos grandes proyectos del software libre como son el n&uacute;cleo Linux o el escritorio GNOME tenemos que, para el primero, el <a href="http://apcmag.com/linux-now-75-corporate.htm">75% de las aportaciones de c&oacute;digo</a> las realizan programadores pagados por grandes compa&ntilde;&iacute;as. Para el segundo el <a href="http://blogs.gnome.org/bolsh/2010/07/28/gnome-census/">30% de las aportaciones de c&oacute;digo</a> fueron realizadas por gente a sueldo. Es software libre es negocio.</p>
-<br>
 <p>Desmitifiquemos las comunidades del software libre. Comunidad y ciudadan&iacute;a son sin&oacute;nimos: est&aacute;n formadas por empresas, entidades p&uacute;blicas, movimientos asociativos y personas individuales; y cada uno de las cuales buscando sus propios beneficios (econ&oacute;micos o no), y que generan, en segunda instancia, un bien com&uacute;n: libertad de uso, acceso, modificaci&oacute;n y distribuci&oacute;n de productos inform&aacute;ticos, adem&aacute;s de la demostraci&oacute;n de que existen otros modelos para la industria.</p>
-<br>
 <strong>La comunidad OpenDNIe</strong>
 <br>
 <p>Nos encontramos actualmente en un momento socio-pol&iacute;tico en el que las entidades p&uacute;blicas coquetean con el open-government, es decir, la transparencia de las administraciones para el fomento de la participaci&oacute;n ciudadana. La comunidad formada sobre OpenDNIe me parece todo un ejemplo: liberaci&oacute;n de c&oacute;digo por parte de la Polic&iacute;a, iniciativa ciudadana para dar soporte, fundaciones p&uacute;blicas que apoyan pero no dirigen, y allegados al proyecto (universitarios, empleados p&uacute;blicos y privados ...) que quieren aportar con su conocimiento t&eacute;cnico.</p>
-<br>
 <p>Intentemos entonces responder a la pregunta inicial: ¿Tienen derecho las comunidades del software libre a exigir que se les transfiera el control del soporte? Afirmativo. La ciudadan&iacute;a es capaz de demostrar que, cuando tiene inter&eacute;s, es capaz de solventar por s&iacute; misma los problemas. Estoy seguro que, una vez se complete el desarrollo de OpenDNIe, no habr&aacute; mejor soporte para el DNIe: la comunidad lo habr&aacute; resuelto.</p>
-<br>
 <p>OpenDNIe se trata solo de un producto tecnol&oacute;gico. Es necesario tomar conciencia que este ejemplo puede extrapolarse tambi&eacute;n a asuntos de mayor calado social. Dejemos de pedir al gobierno que solucione nuestros problemas y comencemos a exigir que nos permita participar.</p>
-<br>
 <strong>Referencias</strong>
 <br>
 <p><a href="http://www.dnielectronico.es/informacion_general.html">http://www.dnielectronico.es/informacion_general.html</a></p>
